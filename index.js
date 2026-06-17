@@ -26,15 +26,15 @@ app.get("/api/news", async (req, res) => {
     }
 
     const response = await axios.get(
-      "https://newsapi.org/v2/top-headlines",
-      {
-        params: {
-          country: "us",
-          category,
-          apiKey: process.env.VITE_NEWS_API_KEY,
-        },
-      }
-    );
+        "https://newsapi.org/v2/top-headlines",
+        {
+          params: {
+            country: "us",
+            category,
+            apiKey: process.env.NEWS_API_KEY,
+          },
+        }
+      );
 
     return res.json({
       articles: response.data.articles,
