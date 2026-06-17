@@ -14,7 +14,6 @@ app.use(
       "http://localhost:5173",
       "https://personalized-dashboard-seven-pi.vercel.app",
     ],
-    methods: ["GET"],
   })
 );
 
